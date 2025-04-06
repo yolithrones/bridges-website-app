@@ -1,0 +1,227 @@
+{
+  "bridges": [
+    {
+      "id": 1,
+      "name": "Golden Gate Bridge",
+      "location": "San Francisco, USA",
+      "continent": "North America",
+      "category": "iconic",
+      "yearBuilt": 1937,
+      "length": "2737 meters",
+      "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California to Marin County. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.",
+      "image": "/images/bridges/iconic/golden_gate.jpg",
+      "gallery": [
+        "/images/bridges/iconic/golden_gate_1.jpg",
+        "/images/bridges/iconic/golden_gate_2.jpg",
+        "/images/bridges/iconic/golden_gate_3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Brooklyn Bridge",
+      "location": "New York, USA",
+      "continent": "North America",
+      "category": "historical",
+      "yearBuilt": 1883,
+      "length": "1825 meters",
+      "description": "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, it was the first fixed crossing of the East River. It was also the longest suspension bridge in the world at the time of its opening, with a main span of 1,595.5 feet (486.3 m).",
+      "image": "/images/bridges/historical/brooklyn.jpg",
+      "gallery": [
+        "/images/bridges/historical/brooklyn_1.jpg",
+        "/images/bridges/historical/brooklyn_2.jpg",
+        "/images/bridges/historical/brooklyn_3.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Akashi Kaikyō Bridge",
+      "location": "Kobe-Naruto, Japan",
+      "continent": "Asia",
+      "category": "high-level",
+      "yearBuilt": 1998,
+      "length": "3911 meters",
+      "isLongest": true,
+      "description": "The Akashi Kaikyō Bridge is a suspension bridge crossing the Akashi Strait. It links Kobe on the Japanese mainland of Honshu to Iwaya on Awaji Island. It carries part of the Kobe-Awaji-Naruto Expressway. It is currently the world's longest suspension bridge.",
+      "image": "/images/bridges/high-level/akashi.jpg",
+      "gallery": [
+        "/images/bridges/high-level/akashi_1.jpg",
+        "/images/bridges/high-level/akashi_2.jpg",
+        "/images/bridges/high-level/akashi_3.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Millau Viaduct",
+      "location": "Millau-Creissels, France",
+      "continent": "Europe",
+      "category": "modern",
+      "yearBuilt": 2004,
+      "isTallest": true,
+      "height": "343 meters",
+      "description": "The Millau Viaduct is a multi-span cable-stayed bridge completed in 2004. It spans the gorge valley of the Tarn near Millau in Southern France. The bridge has a structural height of 336.4 m, making it the tallest bridge in the world.",
+      "image": "/images/bridges/modern/millau.jpg",
+      "gallery": [
+        "/images/bridges/modern/millau_1.jpg",
+        "/images/bridges/modern/millau_2.jpg",
+        "/images/bridges/modern/millau_3.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ponte Vecchio",
+      "location": "Florence, Italy",
+      "continent": "Europe",
+      "category": "historical",
+      "yearBuilt": 1345,
+      "isOldest": true,
+      "description": "The Ponte Vecchio is a medieval stone closed-spandrel segmental arch bridge over the Arno River, noted for still having shops built along it. Butchers initially occupied the shops; the present tenants are jewelers, art dealers, and souvenir sellers.",
+      "image": "/images/bridges/historical/ponte_vecchio.jpg",
+      "gallery": [
+        "/images/bridges/historical/ponte_vecchio_1.jpg",
+        "/images/bridges/historical/ponte_vecchio_2.jpg",
+        "/images/bridges/historical/ponte_vecchio_3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sydney Harbour Bridge",
+      "location": "Sydney, Australia",
+      "continent": "Australia",
+      "category": "iconic",
+      "yearBuilt": 1932,
+      "description": "The Sydney Harbour Bridge is a steel through arch bridge across Sydney Harbour that carries rail, vehicular, bicycle, and pedestrian traffic between the Sydney central business district and the North Shore.",
+      "image": "/images/bridges/iconic/sydney_harbour.jpg",
+      "gallery": [
+        "/images/bridges/iconic/sydney_harbour_1.jpg",
+        "/images/bridges/iconic/sydney_harbour_2.jpg",
+        "/images/bridges/iconic/sydney_harbour_3.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Danyang–Kunshan Grand Bridge",
+      "location": "Jiangsu, China",
+      "continent": "Asia",
+      "category": "modern",
+      "yearBuilt": 2010,
+      "length": "164800 meters",
+      "isLongest": true,
+      "description": "The Danyang–Kunshan Grand Bridge is the world's longest bridge. It is a 164.8-kilometre (102.4 mi) viaduct on the Beijing–Shanghai High-Speed Railway. The bridge is located on the rail line between Shanghai and Nanjing in East China's Jiangsu province.",
+      "image": "/images/bridges/modern/danyang_kunshan.jpg",
+      "gallery": [
+        "/images/bridges/modern/danyang_kunshan_1.jpg",
+        "/images/bridges/modern/danyang_kunshan_2.jpg",
+        "/images/bridges/modern/danyang_kunshan_3.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Beipanjiang Bridge",
+      "location": "Guizhou, China",
+      "continent": "Asia",
+      "category": "high-level",
+      "yearBuilt": 2016,
+      "isHighest": true,
+      "height": "565 meters",
+      "description": "The Beipanjiang Bridge is a cable-stayed bridge on the border between Xuanwei city, Yunnan Province, and Shuicheng County, Guizhou Province in China. With a height of 565 meters, it is the highest bridge in the world.",
+      "image": "/images/bridges/high-level/beipanjiang.jpg",
+      "gallery": [
+        "/images/bridges/high-level/beipanjiang_1.jpg",
+        "/images/bridges/high-level/beipanjiang_2.jpg",
+        "/images/bridges/high-level/beipanjiang_3.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Tower Bridge",
+      "location": "London, UK",
+      "continent": "Europe",
+      "category": "iconic",
+      "yearBuilt": 1894,
+      "description": "Tower Bridge is a combined bascule and suspension bridge in London, built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London.",
+      "image": "/images/bridges/iconic/tower_bridge.jpg",
+      "gallery": [
+        "/images/bridges/iconic/tower_bridge_1.jpg",
+        "/images/bridges/iconic/tower_bridge_2.jpg",
+        "/images/bridges/iconic/tower_bridge_3.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Stari Most",
+      "location": "Mostar, Bosnia and Herzegovina",
+      "continent": "Europe",
+      "category": "historical",
+      "yearBuilt": 1566,
+      "rebuilt": 2004,
+      "description": "Stari Most is a reconstructed 16th-century Ottoman bridge in the city of Mostar in Bosnia and Herzegovina that crosses the river Neretva and connects the two parts of the city. The Old Bridge stood for 427 years, until it was destroyed on 9 November 1993 by Croat forces during the Croat–Bosniak War.",
+      "image": "/images/bridges/historical/stari_most.jpg",
+      "gallery": [
+        "/images/bridges/historical/stari_most_1.jpg",
+        "/images/bridges/historical/stari_most_2.jpg",
+        "/images/bridges/historical/stari_most_3.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Henderson Waves",
+      "location": "Singapore",
+      "continent": "Asia",
+      "category": "modern",
+      "yearBuilt": 2008,
+      "description": "Henderson Waves is the highest pedestrian bridge in Singapore. It is located in the Southern Ridges and connects Mount Faber Park to Telok Blangah Hill Park. At 36 metres above Henderson Road, it offers stunning views of the city and the harbor.",
+      "image": "/images/bridges/modern/henderson_waves.jpg",
+      "gallery": [
+        "/images/bridges/modern/henderson_waves_1.jpg",
+        "/images/bridges/modern/henderson_waves_2.jpg",
+        "/images/bridges/modern/henderson_waves_3.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Forth Bridge",
+      "location": "Edinburgh, Scotland",
+      "continent": "Europe",
+      "category": "historical",
+      "yearBuilt": 1890,
+      "description": "The Forth Bridge is a cantilever railway bridge across the Firth of Forth in the east of Scotland, 9 miles west of central Edinburgh. It is considered as a symbol of Scotland and is a UNESCO World Heritage Site.",
+      "image": "/images/bridges/historical/forth_bridge.jpg",
+      "gallery": [
+        "/images/bridges/historical/forth_bridge_1.jpg",
+        "/images/bridges/historical/forth_bridge_2.jpg",
+        "/images/bridges/historical/forth_bridge_3.jpg"
+      ]
+    }
+  ],
+  "continents": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "South America",
+    "Australia",
+    "Antarctica"
+  ],
+  "categories": [
+    {
+      "id": "historical",
+      "name": "Historical Great Bridges",
+      "description": "Bridges that have stood the test of time and represent significant historical achievements in engineering."
+    },
+    {
+      "id": "iconic",
+      "name": "Iconic Bridges",
+      "description": "Bridges that have become symbols of their cities and are recognized worldwide."
+    },
+    {
+      "id": "high-level",
+      "name": "High-Level Achievements in Bridges",
+      "description": "Bridges that represent extraordinary engineering accomplishments in terms of span, height, or other technical features."
+    },
+    {
+      "id": "modern",
+      "name": "Modern Great Bridges",
+      "description": "Contemporary bridges that showcase the latest innovations in design and engineering."
+    }
+  ]
+}
