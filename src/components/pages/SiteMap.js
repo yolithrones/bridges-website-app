@@ -7,7 +7,7 @@ import { FaChevronRight, FaHome, FaImages, FaInfoCircle, FaEnvelope, FaQuestionC
 
 const SiteMapContainer = styled.div`
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 2rem;
 `;
 

@@ -6,7 +6,7 @@ import { FaFilter, FaTimes } from 'react-icons/fa';
 
 const GalleryContainer = styled.div`
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 2rem;
 `;
 

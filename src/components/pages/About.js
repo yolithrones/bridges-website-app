@@ -6,7 +6,7 @@ import { FaUsers, FaGlobe, FaHistory, FaAward } from 'react-icons/fa';
 
 const AboutContainer = styled.div`
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 2rem;
 `;
 
