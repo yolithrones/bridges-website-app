@@ -11,6 +11,7 @@ const BridgeListContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  margin-top: 30px;
 `;
 
 const Title = styled(motion.h1)`

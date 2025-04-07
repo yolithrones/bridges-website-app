@@ -159,4 +159,4 @@ const BridgeCard = ({ bridge }) => {
   );
 };
 
-export default BridgeCard; 
+export default BridgeCard;

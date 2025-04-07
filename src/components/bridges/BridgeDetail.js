@@ -275,4 +275,4 @@ const BridgeDetail = () => {
   );
 };
 
-export default BridgeDetail; 
+export default BridgeDetail;
