@@ -117,8 +117,8 @@ const Hero = () => {
     <HeroSection>
       <HeroBackground style={{ y }}>
         <img
-          src="/images/hero-bridge.jpg"
-          alt="Beautiful Bridge"
+          src="/images/iconic/golden_gate.jpg"
+          alt="Golden Gate Bridge"
           loading="eager"
         />
       </HeroBackground>

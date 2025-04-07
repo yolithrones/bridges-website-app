@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridges Website - Flowchart</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --background-color: #f5f6fa;
+            --node-background: #fff;
+            --node-border: #bdc3c7;
+            --arrow-color: #7f8c8d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .node {
+            background-color: var(--node-background);
+            border: 2px solid var(--node-border);
+            border-radius: 8px;
+            padding: 1rem;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .node:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .node::after {
+            content: '';
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            width: 2px;
+            height: 2rem;
+            background-color: var(--arrow-color);
+            transform: translateX(-50%);
+        }
+
+        .node:last-child::after {
+            display: none;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 2px;
+            height: 2rem;
+            background-color: var(--arrow-color);
+            transform-origin: top;
+        }
+
+        .arrow::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid var(--arrow-color);
+        }
+
+        .title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        .legend {
+            margin-top: 3rem;
+            padding: 1rem;
+            background-color: var(--node-background);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .legend h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .node {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .arrow {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bridges Website Flowchart</h1>
+        <p class="subtitle">User Journey and Application Flow</p>
+
+        <div class="flowchart">
+            <!-- Entry Point -->
+            <div class="row">
+                <div class="node">
+                    <h3>User Entry</h3>
+                    <p>Website Landing</p>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="row">
+                <div class="node">
+                    <h3>Home</h3>
+                    <p>Featured Bridges</p>
+                </div>
+                <div class="node">
+                    <h3>Gallery</h3>
+                    <p>Bridge Images</p>
+                </div>
+                <div class="node">
+                    <h3>Travel</h3>
+                    <p>Travel Guide</p>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="row">
+                <div class="node">
+                    <h3>About</h3>
+                    <p>Project Info</p>
+                </div>
+                <div class="node">
+                    <h3>Contact</h3>
+                    <p>Contact Form</p>
+                </div>
+                <div class="node">
+                    <h3>FAQ</h3>
+                    <p>Help Section</p>
+                </div>
+            </div>
+
+            <!-- User Actions -->
+            <div class="row">
+                <div class="node">
+                    <h3>Feedback</h3>
+                    <p>User Input</p>
+                </div>
+                <div class="node">
+                    <h3>Share</h3>
+                    <p>Social Media</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--primary-color);"></div>
+                <span>Primary Flow</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--secondary-color);"></div>
+                <span>Secondary Flow</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--accent-color);"></div>
+                <span>User Action</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -143,7 +143,7 @@ const Home = () => {
     <HomeContainer>
       <Hero />
 
-      <Section>
+      <Section style={{ marginTop: '80px' }}>
         <Container>
           <SectionTitle
             initial={{ opacity: 0, y: -20 }}
@@ -230,21 +230,21 @@ const Home = () => {
             animate="visible"
           >
             <ImageCard variants={itemVariants}>
-              <img src="/images/bridges/golden-gate.jpg" alt="Golden Gate Bridge" />
+              <img src="/images/iconic/golden_gate.jpg" alt="Golden Gate Bridge" />
               <ImageOverlay>
                 <h3>Golden Gate Bridge</h3>
                 <p>San Francisco, USA</p>
               </ImageOverlay>
             </ImageCard>
             <ImageCard variants={itemVariants}>
-              <img src="/images/bridges/tower-bridge.jpg" alt="Tower Bridge" />
+              <img src="/images/iconic/tower_bridge.jpg" alt="Tower Bridge" />
               <ImageOverlay>
                 <h3>Tower Bridge</h3>
                 <p>London, UK</p>
               </ImageOverlay>
             </ImageCard>
             <ImageCard variants={itemVariants}>
-              <img src="/images/bridges/sydney-harbour.jpg" alt="Sydney Harbour Bridge" />
+              <img src="/images/iconic/sydney_harbour.jpg" alt="Sydney Harbour Bridge" />
               <ImageOverlay>
                 <h3>Sydney Harbour Bridge</h3>
                 <p>Sydney, Australia</p>

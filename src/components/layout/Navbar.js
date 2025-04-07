@@ -29,16 +29,33 @@ const NavContainer = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: ${theme.colors.primary};
-  text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-
-  img {
-    height: 40px;
+  text-decoration: none;
+  color: ${props => props.theme.colors.text};
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 0.5rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, ${theme.colors.primary}, ${theme.colors.secondary});
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 `;
 
@@ -55,9 +72,10 @@ const NavLinks = styled.div`
 const NavLink = styled(Link)`
   color: ${theme.colors.text};
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   padding: 0.5rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &::after {
     content: '';
@@ -108,9 +126,10 @@ const MobileMenu = styled(motion.div)`
 const MobileNavLink = styled(Link)`
   color: ${theme.colors.text};
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   padding: 1rem 0;
   border-bottom: 1px solid ${theme.colors.light};
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 `;
 
 const Navbar = () => {
@@ -130,17 +149,18 @@ const Navbar = () => {
     <Nav scrolled={scrolled}>
       <NavContainer>
         <Logo to="/">
-          <img src="/logo.svg" alt="Bridges Logo" />
-          Bridges
+          BridgesWebsite
         </Logo>
 
         <NavLinks>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/historical">Historical</NavLink>
-          <NavLink to="/modern">Modern</NavLink>
+          <NavLink to="/bridges">Bridges</NavLink>
           <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/travel">Travel</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/faq">FAQ</NavLink>
+          <VisitorCounter />
         </NavLinks>
 
         <MobileMenuButton onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -156,15 +176,15 @@ const Navbar = () => {
               transition={{ type: 'tween', duration: 0.3 }}
             >
               <MobileNavLink to="/" onClick={() => setMobileMenuOpen(false)}>Home</MobileNavLink>
-              <MobileNavLink to="/historical" onClick={() => setMobileMenuOpen(false)}>Historical</MobileNavLink>
-              <MobileNavLink to="/modern" onClick={() => setMobileMenuOpen(false)}>Modern</MobileNavLink>
+              <MobileNavLink to="/bridges" onClick={() => setMobileMenuOpen(false)}>Bridges</MobileNavLink>
               <MobileNavLink to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</MobileNavLink>
+              <MobileNavLink to="/travel" onClick={() => setMobileMenuOpen(false)}>Travel</MobileNavLink>
               <MobileNavLink to="/about" onClick={() => setMobileMenuOpen(false)}>About</MobileNavLink>
               <MobileNavLink to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</MobileNavLink>
+              <MobileNavLink to="/faq" onClick={() => setMobileMenuOpen(false)}>FAQ</MobileNavLink>
             </MobileMenu>
           )}
         </AnimatePresence>
-        <VisitorCounter />
       </NavContainer>
     </Nav>
   );

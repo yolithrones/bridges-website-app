@@ -1,144 +1,181 @@
-# Bridges Around the World - Flow Charts
+# Bridges Website - Flow Charts
 
-## 1. Application Flow
+## Table of Contents
+1. [Application Flow](#application-flow)
+2. [User Interaction Flow](#user-interaction-flow)
+3. [Data Flow](#data-flow)
+4. [Component Hierarchy](#component-hierarchy)
+5. [Error Handling Flow](#error-handling-flow)
+6. [Animation Flow](#animation-flow)
+
+## Application Flow
+
 ```mermaid
 graph TD
-    A[User Enters Website] --> B[Home Page]
-    B --> C{Browse Options}
-    C -->|View Bridges| D[Bridge List]
-    C -->|About Us| E[About Page]
-    C -->|Contact| F[Contact Form]
-    C -->|Gallery| G[Photo Gallery]
-    D --> H[Bridge Details]
-    H -->|Back| D
-    F -->|Submit| I[Form Success]
-    G -->|View Photo| J[Full Screen View]
+    A[User Enters Website] --> B[Load Home Page]
+    B --> C{User Navigation}
+    C -->|Gallery| D[View Bridge Gallery]
+    C -->|Travel| E[Explore Travel Guide]
+    C -->|About| F[Learn About Us]
+    C -->|Contact| G[Contact Form]
+    C -->|FAQ| H[FAQ Section]
+    
+    D --> I[Filter by Category]
+    D --> J[View Full Screen]
+    D --> K[Share Bridge]
+    
+    E --> L[Filter by Region]
+    E --> M[View Travel Tips]
+    E --> N[Interactive Map]
+    
+    G --> O[Submit Form]
+    G --> P[View Success Message]
+    
+    H --> Q[Search Questions]
+    H --> R[View Answers]
 ```
 
-## 2. Bridge List Flow
+## User Interaction Flow
+
+```mermaid
+graph LR
+    A[User] --> B[Navbar]
+    B --> C[Logo with Gradient Underline]
+    B --> D[Menu Items]
+    B --> E[Visitor Counter]
+    
+    D --> F[Home]
+    D --> G[Gallery]
+    D --> H[Travel]
+    D --> I[About]
+    D --> J[Contact]
+    D --> K[FAQ]
+    
+    F --> L[Scroll Content]
+    F --> M[View Featured Bridges]
+    
+    G --> N[Filter Images]
+    G --> O[View Full Screen]
+    
+    H --> P[Filter Destinations]
+    H --> Q[View Travel Tips]
+    
+    I --> R[Read About Us]
+    I --> S[View Team]
+    
+    J --> T[Fill Contact Form]
+    J --> U[Submit]
+    
+    K --> V[Search FAQ]
+    K --> W[View Answers]
+```
+
+## Data Flow
+
 ```mermaid
 graph TD
-    A[Bridge List Page] --> B{Filter Options}
-    B -->|Category| C[Filter by Category]
-    B -->|Type| D[Filter by Type]
-    B -->|Continent| E[Filter by Continent]
-    C --> F[Update Results]
-    D --> F
-    E --> F
-    F --> G[Display Filtered Bridges]
-    G --> H[Bridge Card]
-    H -->|Click| I[Bridge Detail]
+    A[Data Sources] --> B[Bridge Data]
+    A --> C[Image Assets]
+    A --> D[User Data]
+    
+    B --> E[Bridge Components]
+    C --> F[Gallery Components]
+    C --> G[Travel Components]
+    D --> H[Contact Form]
+    D --> I[Feedback System]
+    
+    E --> J[Bridge Display]
+    F --> K[Image Gallery]
+    G --> L[Travel Guide]
+    H --> M[Form Submission]
+    I --> N[User Feedback]
+    
+    J --> O[User Interface]
+    K --> O
+    L --> O
+    M --> P[Backend]
+    N --> P
 ```
 
-## 3. User Interaction Flow
-```mermaid
-graph TD
-    A[User Action] --> B{Action Type}
-    B -->|Contact| C[Contact Form]
-    B -->|Feedback| D[Feedback Form]
-    B -->|Newsletter| E[Newsletter Signup]
-    C -->|Submit| F[Form Validation]
-    D -->|Submit| F
-    E -->|Submit| F
-    F -->|Valid| G[Success Message]
-    F -->|Invalid| H[Error Message]
-```
+## Component Hierarchy
 
-## 4. Data Flow
-```mermaid
-graph TD
-    A[Data Source] --> B[Bridge Data]
-    B --> C[Filter Functions]
-    C --> D[Bridge List]
-    D --> E[Bridge Cards]
-    E --> F[Bridge Detail]
-    F --> G[Technical Specs]
-    F --> H[Gallery]
-    F --> I[Historical Info]
-```
-
-## 5. Component Hierarchy
 ```mermaid
 graph TD
     A[App] --> B[Layout]
     B --> C[Navbar]
     B --> D[Footer]
-    B --> E[Main Content]
-    E --> F[Bridge Components]
-    E --> G[Page Components]
-    E --> H[Common Components]
-    F --> I[BridgeList]
-    F --> J[BridgeDetail]
-    G --> K[Home]
-    G --> L[About]
-    G --> M[Contact]
-    H --> N[Button]
-    H --> O[Ticker]
+    B --> E[Ticker]
+    
+    C --> F[Logo]
+    C --> G[Menu Items]
+    C --> H[Visitor Counter]
+    
+    A --> I[Pages]
+    I --> J[Home]
+    I --> K[Gallery]
+    I --> L[Travel]
+    I --> M[About]
+    I --> N[Contact]
+    I --> O[FAQ]
+    
+    J --> P[Hero]
+    J --> Q[Featured Bridges]
+    
+    K --> R[Image Grid]
+    K --> S[Filter Controls]
+    
+    L --> T[Destination Cards]
+    L --> U[Travel Tips]
+    
+    M --> V[About Content]
+    M --> W[Team Section]
+    
+    N --> X[Contact Form]
+    N --> Y[Map]
+    
+    O --> Z[FAQ List]
+    O --> AA[Search Bar]
 ```
 
-## 6. Styling Flow
+## Error Handling Flow
+
 ```mermaid
 graph TD
-    A[Theme] --> B[Global Styles]
-    B --> C[Component Styles]
-    C --> D[Layout Components]
-    C --> E[Feature Components]
-    C --> F[Common Components]
-    D --> G[Responsive Design]
-    E --> G
-    F --> G
+    A[User Action] --> B{Validation}
+    B -->|Valid| C[Process Action]
+    B -->|Invalid| D[Show Error]
+    
+    C --> E{Success?}
+    E -->|Yes| F[Show Success]
+    E -->|No| G[Show Error]
+    
+    D --> H[Error Message]
+    G --> H
+    
+    H --> I[Retry Option]
+    I --> A
 ```
 
-## 7. State Management Flow
-```mermaid
-graph TD
-    A[Component State] --> B{State Type}
-    B -->|Local| C[useState]
-    B -->|Shared| D[Context]
-    B -->|Form| E[Form State]
-    C --> F[Update UI]
-    D --> F
-    E --> F
-```
+## Animation Flow
 
-## 8. Error Handling Flow
 ```mermaid
 graph TD
-    A[User Action] --> B{Error Check}
-    B -->|Form Input| C[Validation]
-    B -->|Data Load| D[Error Boundary]
-    B -->|API Call| E[Error Handler]
-    C -->|Invalid| F[Show Error]
-    D -->|Error| F
-    E -->|Error| F
-    F --> G[User Feedback]
-```
-
-## 9. Animation Flow
-```mermaid
-graph TD
-    A[User Interaction] --> B{Animation Type}
-    B -->|Page Load| C[Fade In]
-    B -->|Scroll| D[Scroll Animation]
-    B -->|Hover| E[Hover Effect]
-    B -->|Click| F[Click Animation]
-    C --> G[Animate Component]
-    D --> G
-    E --> G
-    F --> G
-```
-
-## 10. Deployment Flow
-```mermaid
-graph TD
-    A[Development] --> B[Testing]
-    B --> C[Build]
-    C --> D[Optimization]
-    D --> E[Deployment]
-    E --> F[Production]
-    F --> G[Monitoring]
-    G --> H[Updates]
-    H --> A
+    A[Page Load] --> B[Fade In]
+    B --> C[Navbar Appear]
+    C --> D[Content Load]
+    
+    D --> E[Scroll Animations]
+    E --> F[Image Hover]
+    E --> G[Button Hover]
+    
+    F --> H[Scale Effect]
+    G --> I[Color Change]
+    
+    D --> J[Logo Hover]
+    J --> K[Gradient Underline]
+    
+    D --> L[Menu Hover]
+    L --> M[Color Transition]
 ```
 
 ## Notes for Flow Charts

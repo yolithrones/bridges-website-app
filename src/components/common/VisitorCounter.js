@@ -5,28 +5,29 @@ import { FaEye } from 'react-icons/fa';
 import { theme } from '../../styles/themes/theme';
 
 const CounterContainer = styled(motion.div)`
-  position: fixed;
-  top: 13px;
-  left: 5px;
-  margin-right: 20px;
-  background: ${theme.colors.primary};
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: ${theme.borderRadius.medium};
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: ${theme.shadows.medium};
-  z-index: 1000;
+  color: ${theme.colors.text};
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: ${theme.borderRadius.medium};
+  background: ${theme.colors.light};
+  margin-left: 1rem;
 
   svg {
     font-size: 1.2rem;
+    color: ${theme.colors.primary};
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    display: none;
   }
 `;
 
 const Count = styled.span`
   font-weight: bold;
-  font-size: 1.1rem;
+  color: ${theme.colors.primary};
 `;
 
 const VisitorCounter = () => {
@@ -47,8 +48,8 @@ const VisitorCounter = () => {
 
   return (
     <CounterContainer
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
       <FaEye />

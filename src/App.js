@@ -5,7 +5,7 @@ import { theme } from './styles/themes/theme';
 import GlobalStyles from './styles/GlobalStyles';
 
 // Layout Components
-import Header from './components/layout/Header';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Ticker from './components/layout/Ticker';
 
@@ -26,7 +26,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -38,6 +38,8 @@ const App = () => {
           <Route path="/bridges" element={<BridgeList />} />
           <Route path="/bridges/:id" element={<BridgeDetail />} />
           <Route path="/feedback" element={<FeedbackForm />} />
+          <Route path="/historical" element={<BridgeList category="historical" />} />
+          <Route path="/modern" element={<BridgeList category="modern" />} />
         </Routes>
         <Ticker />
         <Footer />

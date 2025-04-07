@@ -37,12 +37,38 @@ The application will open in your default browser at `http://localhost:3000`.
 ## Project Structure
 
 ```
-src/
-  ├── components/     # Reusable components
-  ├── pages/         # Page components
-  ├── styles/        # Global styles and theme
-  ├── utils/         # Utility functions
-  └── App.js         # Main application component
+bridges-website/
+├── public/
+│   ├── images/
+│   │   ├── historical/
+│   │   ├── iconic/
+│   │   ├── modern/
+│   │   └── high-level/
+│   ├── manifest.json
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── about/
+│   │   ├── bridges/
+│   │   ├── common/
+│   │   ├── contact/
+│   │   ├── feedback/
+│   │   ├── gallery/
+│   │   ├── layout/
+│   │   ├── pages/
+│   │   └── travel/
+│   ├── data/
+│   ├── styles/
+│   │   ├── themes/
+│   │   └── GlobalStyles.js
+│   ├── App.js
+│   └── index.js
+├── documentation/
+│   ├── PROJECT_DOCUMENTATION.md
+│   ├── FLOW_CHARTS.md
+│   └── VIDEO_DOCUMENTATION_SCRIPT.md
+├── package.json
+└── README.md
 ```
 
 ## Features
@@ -55,15 +81,15 @@ src/
 - FAQ section
 - Site map
 - Animated transitions
+- Visitor counter
+- Location-based ticker
 
 ## Technologies Used
 
-- React 18
-- React Router v6
+- React
+- React Router
 - Styled Components
 - Framer Motion
-- React Bootstrap
-- Leaflet Maps
 - React Icons
 
 ## Browser Support

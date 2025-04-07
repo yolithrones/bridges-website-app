@@ -1,4 +1,4 @@
-# Bridges Around the World - Project Documentation
+# Bridges Website - Project Documentation
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -12,7 +12,7 @@
 9. [Deployment](#deployment)
 
 ## Project Overview
-Bridges Around the World is a modern Single-Page Application (SPA) dedicated to showcasing incredible bridges from around the globe. The website features an interactive interface, rich media content, and comprehensive information about various types of bridges.
+Bridges Website is a modern Single-Page Application (SPA) dedicated to showcasing incredible bridges from around the globe. The website features an interactive interface, rich media content, and comprehensive information about various types of bridges.
 
 ### Objectives
 - Showcase historical and modern bridges
@@ -24,14 +24,11 @@ Bridges Around the World is a modern Single-Page Application (SPA) dedicated to 
 ## Technical Stack
 
 ### Frontend Technologies
-- React.js (v19.1.0)
-- React Router DOM (v7.5.0)
-- Styled Components (v6.1.17)
-- Framer Motion (v11.18.2)
-- React Icons (v5.5.0)
-- React Bootstrap (v2.10.9)
-- Leaflet & React Leaflet (for maps)
-- AOS & Swiper (for animations)
+- React.js
+- React Router DOM
+- Styled Components
+- Framer Motion
+- React Icons
 
 ### Development Tools
 - Node.js
@@ -44,6 +41,13 @@ Bridges Around the World is a modern Single-Page Application (SPA) dedicated to 
 ```
 bridges-website/
 ├── public/
+│   ├── images/
+│   │   ├── historical/
+│   │   ├── iconic/
+│   │   ├── modern/
+│   │   └── high-level/
+│   ├── manifest.json
+│   └── index.html
 ├── src/
 │   ├── components/
 │   │   ├── about/
@@ -61,6 +65,11 @@ bridges-website/
 │   │   └── GlobalStyles.js
 │   ├── App.js
 │   └── index.js
+├── documentation/
+│   ├── PROJECT_DOCUMENTATION.md
+│   ├── FLOW_CHARTS.md
+│   ├── VIDEO_DOCUMENTATION_SCRIPT.md
+│   └── flowchart.htm
 ├── package.json
 └── README.md
 ```
@@ -79,6 +88,7 @@ bridges-website/
    - Modern animations
    - Interactive elements
    - Smooth navigation
+   - Text-based logo with hover effects
 
 3. **User Engagement**
    - Contact form
@@ -89,7 +99,7 @@ bridges-website/
 4. **Additional Features**
    - Visitor counter
    - Location-based ticker
-   - Travel advertisements
+   - Travel guide
    - Site map
    - FAQ section
 
@@ -99,7 +109,9 @@ bridges-website/
 1. **Navbar**
    - Responsive navigation
    - Mobile menu
-   - Search functionality
+   - Visitor counter
+   - Text-based logo with gradient underline effect
+   - Enhanced text visibility with shadows and increased font weight
 
 2. **Footer**
    - Social media links
@@ -107,18 +119,49 @@ bridges-website/
    - Quick links
    - Contact information
 
-### Bridge Components
-1. **BridgeList**
-   - Grid layout
-   - Filtering system
-   - Pagination
-   - Sorting options
+3. **Ticker**
+   - Location display
+   - Scrolling messages
+   - Real-time updates
 
-2. **BridgeDetail**
+### Page Components
+1. **Home**
    - Hero section
-   - Technical specifications
-   - Image gallery
-   - Historical information
+   - Featured bridges
+   - Call-to-action buttons
+   - Proper spacing from navbar
+
+2. **Bridges**
+   - Bridge listing
+   - Filtering options
+   - Bridge details
+
+3. **Gallery**
+   - Photo grid
+   - Filtering by category
+   - Full-screen view
+   - Updated image paths
+
+4. **Travel**
+   - Travel destinations
+   - Travel tips
+   - Interactive map
+   - Updated image paths
+
+5. **About**
+   - Team information
+   - Mission statement
+   - Statistics
+
+6. **Contact**
+   - Contact form
+   - Contact information
+   - Map
+
+7. **FAQ**
+   - Frequently asked questions
+   - Search functionality
+   - Categorized questions
 
 ### Common Components
 1. **Button**
@@ -126,10 +169,10 @@ bridges-website/
    - Animation effects
    - Responsive design
 
-2. **Ticker**
-   - Location display
-   - Scrolling messages
-   - Real-time updates
+2. **VisitorCounter**
+   - Visitor count display
+   - Local storage persistence
+   - Animated counter
 
 ## Data Structure
 
@@ -172,6 +215,12 @@ bridges-website/
 - Utility classes
 - Animation classes
 
+### Recent Styling Updates
+- Enhanced navbar text visibility with increased font weight and text shadows
+- Added margin to the top of the first section to create space from the navbar
+- Implemented text-based logo with gradient underline effect
+- Updated image paths to use underscores instead of hyphens for consistency
+
 ## Getting Started
 
 ### Prerequisites
@@ -213,7 +262,7 @@ bridges-website/
 3. Docker container
 
 ### Environment Variables
-- REACT_APP
+- REACT_APP_API_URL
 
 ## Maintenance
 
