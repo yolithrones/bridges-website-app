@@ -83,16 +83,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const SubLinkList = styled.ul`
-  list-style: none;
-  padding-left: 1.5rem;
-  margin: 0.5rem 0;
-`;
-
-const SubLinkItem = styled(motion.li)`
-  margin-bottom: 0.5rem;
-`;
-
 const SiteMap = () => {
   const siteStructure = {
     main: [

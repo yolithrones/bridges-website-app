@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/themes/theme';
-import { FaMapMarkerAlt, FaCalendar, FaInfoCircle, FaTicketAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaCalendar, FaTicketAlt } from 'react-icons/fa';
 
 const TravelContainer = styled.div`
   max-width: 1200px;
