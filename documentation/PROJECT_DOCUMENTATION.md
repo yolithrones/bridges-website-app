@@ -213,9 +213,7 @@ bridges-website/
 3. Docker container
 
 ### Environment Variables
-- REACT_APP_API_URL
-- REACT_APP_MAP_KEY
-- REACT_APP_ANALYTICS_ID
+- REACT_APP
 
 ## Maintenance
 
@@ -236,7 +234,6 @@ bridges-website/
 
 ### Documentation
 - Component documentation
-- API documentation
 - Style guide
 - Contributing guidelines
 
