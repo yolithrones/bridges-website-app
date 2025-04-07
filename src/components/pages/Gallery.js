@@ -180,14 +180,14 @@ const Gallery = () => {
     },
     {
       id: 5,
-      src: '/images/historical/ponte_vecchio.jpg',
+      src: '/images/historical/charles_bridge.jpg',
       title: 'Charles Bridge',
       location: 'Prague, Czech Republic',
       category: 'historical',
     },
     {
       id: 6,
-      src: '/images/modern/millau.jpg',
+      src: '/images/modern/akashi.jpg',
       title: 'Akashi Kaikyo Bridge',
       location: 'Kobe, Japan',
       category: 'modern',
