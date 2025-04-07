@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { theme } from '../../styles/themes/theme';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import VisitorCounter from '../../components/common/VisitorCounter';
+
 
 const Nav = styled.nav`
   position: fixed;
@@ -162,6 +164,7 @@ const Navbar = () => {
             </MobileMenu>
           )}
         </AnimatePresence>
+        <VisitorCounter />
       </NavContainer>
     </Nav>
   );

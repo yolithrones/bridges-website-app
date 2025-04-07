@@ -27,7 +27,6 @@ const App = () => {
       <GlobalStyles />
       <Router>
         <Header />
-        <Ticker />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -40,6 +39,7 @@ const App = () => {
           <Route path="/bridges/:id" element={<BridgeDetail />} />
           <Route path="/feedback" element={<FeedbackForm />} />
         </Routes>
+        <Ticker />
         <Footer />
       </Router>
     </ThemeProvider>

@@ -8,8 +8,6 @@ const TickerContainer = styled.div`
   color: white;
   padding: 0.5rem 0;
   overflow: hidden;
-  position: fixed;
-  top: 70px;
   left: 0;
   right: 0;
   z-index: 999;

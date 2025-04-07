@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { theme } from '../../styles/theme';
+import VisitorCounter from '../../components/common/VisitorCounter';
+
 
 const HeaderContainer = styled.header`
   background-color: ${theme.colors.primary};
@@ -26,6 +28,7 @@ const Nav = styled.nav`
 
 const Logo = styled(Link)`
   color: white;
+  margin-left: 50px;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -105,6 +108,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Nav>
+        <VisitorCounter/>
         <Logo to="/">Bridges of the World</Logo>
         <NavLinks>
           <NavLink to="/">Home</NavLink>

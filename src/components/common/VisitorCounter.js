@@ -6,8 +6,9 @@ import { theme } from '../../styles/themes/theme';
 
 const CounterContainer = styled(motion.div)`
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 13px;
+  left: 5px;
+  margin-right: 20px;
   background: ${theme.colors.primary};
   color: white;
   padding: 0.5rem 1rem;
