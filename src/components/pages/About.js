@@ -192,23 +192,24 @@ const About = () => {
 
   const team = [
     {
-      name: 'John Smith',
-      role: 'Founder & CEO',
+      name: 'Yolema Obodaya',
+      role: 'Lead Developer',
       image: '/images/team/john-smith.jpg',
     },
     {
-      name: 'Sarah Johnson',
+      name: 'Sinclair Amachree',
       role: 'Lead Architect',
       image: '/images/team/sarah-johnson.jpg',
     },
     {
-      name: 'Michael Chen',
+      name: 'Angel Francis',
       role: 'Technical Director',
       image: '/images/team/michael-chen.jpg',
     },
     {
-      name: 'Emily Brown',
+      name: 'Timilehin Ajetomob',
       role: 'Content Manager',
+
       image: '/images/team/emily-brown.jpg',
     },
   ];
